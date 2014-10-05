@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Librehatti</title>
+	<link rel="stylesheet" href="main.css" type="text/css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="top-bar" id="top">
+		<header id="header" class="header large-header">
+			<div class="heading-container">
+				<h1 class="main-heading"><span class="pb-dark">LIBRE</span><span class="pb-light">HATTI</span></h1>
+				<p class="tagline">An open source Office Automation software</p>
+			</div>
+			<nav class="primary-nav">
+				<ul>
+				<li><button class="home-menu">Home</button></li>
+				<li><button class="team-menu">Our Team</button></li>
+				<li><button class="install-menu">Install</button></li>
+				<li><button class="contact-menu">Contact us</button></li>
+				</ul>
+				<a href="#" id="pull"></a>
+			</nav>
+		</header>
+		</div>
+
+		<div class="sub-container" id="home">
+			<div class="content-box">
+				<div class="video-container">
+					<img src="images/video-preview.png" class="video-player" width=60%>
+		<!--			<video id="video-player" class="video-player" width=60%>
+					<source src="demoe.mp4" type="video/mp4">
+					</video>-->
+				</div>
+			</div>
+		</div>
+
+		<div id="team" class="sub-container about">
+			<div class="content-box">
+				<h3 class="sub-heading">Our Team</h3>
+
+				<div class="dev">
+					<div class="dev-image"><img src="images/rai.png"></div>
+					<div class="info-container">
+					<p class="name">Prof H.S. Rai</p>
+					<p class="role">Project lead</p>
+					<p class="desciption">He is the dean of Testing and consultancy cell(TCC), located at GNE college Ludhiana, He managed and sponsered this project. It is currently being implemented in TCC.</p>
+					</div>
+				</div>
+
+				<div class="dev">
+					<div class="dev-image"><img src="images/inder.png"></div>
+					<div class="info-container">
+						<p class="name">Inderpreet Singh</p>
+						<p class="role">Visionary</p>
+						<p class="description">He is a poet as well as a programmer. He visioned, planned, set standards for librehatti. On being asked "Who are you", he reffered himself as an "old soul".</p>
+					</div>
+				</div>
+
+				<div class="dev">
+					<div class="dev-image"><img src="images/piyush.png"></div>
+					<div class="info-container">
+						<p class="name">Piyush Parkash</p>
+						<p class="role">Mentor</p>
+						<p class="description">He layed the founding models in Librehatti. And all he aims is to be happy and keep moving forward with a smile.</p>
+					</div>
+				</div>
+
+				<div class="dev">
+					<div class="dev-image"><img src="images/jasvir.png"></div>
+					<div class="info-container">
+						<p class="name">Jasvir Singh</p>
+						<p class="role">Developer</p>
+						<p class="description">He is continuously contributing in Librehatti since it's idea came into existence. He can be reffered as a "Purana khiladi"</p>
+					</div>
+				</div>
+
+				<div class="dev">
+					<div class="dev-image"><img src="images/kamal.png"></div>
+					<div class="info-container">
+						<p class="name">Kamal Kaur</p>
+						<p class="role">Improver</p>
+						<p class="description">She is a programmer as well as a painter. She won't speak much about herself but she does what she is told.</p>
+					</div>
+				</div>
+
+				<div class="dev">
+					<div class="dev-image"><img src="images/jaskaran.png"></div>
+					<div class="info-container">
+						<p class="name">Jaskaran Singh</p>
+						<p class="role">Data Handler</p>
+						<p class="description">He is a programmer and a singer. He loves nature, it's people and himself. He wish to lead a settled and a happy life. He handles the data of librehatti.</p>
+					</div>
+				</div>
+
+				<div class="dev">
+					<div class="dev-image"><img src="images/haramrit.png"></div>
+					<div class="info-container">
+						<p class="name">Har Amrit Pal Singh</p>
+						<p class="role">Developer</p>
+						<p class="description">He wants to become a good learner. He developed admin panel of librehatti and some other stuff. He also did testing of Librehatti.</p>
+					</div>
+				</div>
+
+				<div class="dev">
+					<div class="dev-image"><img src="images/aseem.png"></div>
+					<div class="info-container">
+						<p class="name">Aseem Mittal</p>
+						<p class="role">Developer</p>
+						<p class="description">He is a learner. He likes to play with things and their look. He did voucher and distribution work of librehatti. </p>
+					</div>
+				</div>
+
+				<div class="dev">
+					<div class="dev-image"><img src="images/satinder.png"></div>
+					<div class="info-container">
+						<p class="name">Satinderpal Singh</p>
+						<p class="role">Developer</p>
+						<p class="description">He is director at AASP. He worked as main player in TCC automation, now called librehatti. His main work was to automate report generation.</p>
+					</div>
+				</div>
+
+				<div class="dev">
+					<div class="dev-image"><img src="images/gaurav.png"></div>
+					<div class="info-container">
+						<p class="name">Gauravjeet Singh</p>
+						<p class="role">Front end Developer</p>
+						<p class="description">He does the part related to HTML/CSS. He is the youngest member of this team. He helped in UI part of librehatti and developed the librehatti website.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="install" class="sub-container install">
+			<div class="content-box">
+				<h3 class="sub-heading">How to install</h3>
+				<div class="tutorial">
+					<div class="step step1">
+						<h4 class="fiki-heading" id="prerequisite-heading">Prerequisite</h4>
+						<div id="accordion" class="list-of-requirements">
+							<h3>Apache 2</h3>
+							<div>
+								<code>
+									$ sudo apt-get install apache2
+								</code>
+							</div>
+							<h3>MySQL Server</h3>
+							<div>
+								<code>
+									$ sudo apt-get install mysql-server
+								</code>
+							</div>
+							<h3>Python 2.7</h3>
+							<div>
+								<code>
+									$ sudo apt-get install python
+								</code>
+						
+							</div>
+							<h3>Python-pip</h3>
+							<div>
+								<code>
+									$ sudo apt-get install python-pip
+								</code>
+							</div>
+							<h3>Python-mysqldb</h3>
+							<div>
+								<code>
+									$ sudo apt-get install python-mysqldb
+								</code>
+							</div>
+						</div>
+					</div>
+					<div class="step step2">
+						<h4 class="fiki-heading" id="download-heading">Download LibreHatti</h4>
+						<a href="https://github.com/GreatDevelopers/LibreHatti/zipball/master"><img src="images/zip.png" width=50px;><p>Download as .zip</p></a>
+						<a href="https://github.com/GreatDevelopers/LibreHatti/tarball/master"><img src="images/file.png" width=50px><p>Download as .tar.gz</p></a>
+						<a href="https://github.com/GreatDevelopers/LibreHatti.git"><img src="images/github.png" width=50px><p>Clone from github</p></a>
+					</div>
+					<div class="step step3">
+						<h4 class="fiki-heading" id="install-heading">Installation</h4>
+						<ul>
+						<li>Using cd command reach Librehatti folder</li>
+						<pre><code>$ cd /path/to/Librehatti/</code></pre>
+						<li>Install the required python packages in one go by</li>
+						<pre><code>$ sudo pip install requirements.txt</code></pre>
+						<li>Create a database for librehatti</li>
+<pre><code>$ mysql -u root -p
+$ create database librehatti;
+$ quit
+</code></pre>
+						<li>Configure settings.py according to your system</li>
+						<pre><code>vim /path/to/Librehatti/src/librehatti/settings.py</code></pre>
+Line no 15<pre><vim>NAME : librehatti
+USER : Your MySQL username
+PASSWORD : Your MySQl password _
+</vim></pre>
+Line no 47<pre><vim>STATICFILES_DIRS = (
+    '/path/to/LibreHatti/static',
+) _
+</vim></pre>
+						<li>Go to your librehatti folder and shoot the following commands</li>
+<pre><code>$ cd /path/to/Librehatti/src
+$ python manage.py migrate
+$ python manage.py runserver 127.0.0.1:8090
+</pre></code>
+						Open the browser with url "http://localhost:8090"
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="contribute" class="sub-container contribute">
+			<div class="content-box">
+			</div>
+		</div>
+
+		<div id="contact" class="sub-container contact">
+			<div class="contact-box">
+				<h2 class="sub-heading">Contact us</h2>
+				<form action="http://forms.brace.io/gaurav.ishwerdas@gmail.com" method="POST" class="form contact-form">
+					<input type="text" class="name field" name="Name" placeholder="Enter your name">
+					<input type="email" class="email field"  name="Email-id" placeholder="Enter your email id">
+					<textarea class="content field" name="Content" placeholder="Let's have a talk"></textarea>
+					<input type="submit" value="Send" class="submit-btn">
+				</form>
+			</div>
+		</div>
+
+	</div>
+	<script src="js/install.js"></script>
+	<script src="js/media-player.js"></script>
+	<script src="js/scroll-effect.js"></script>
+</body>
+</html>
