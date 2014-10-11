@@ -131,8 +131,8 @@ button:hover{
 .content-box{
 	max-width: 900px;
 	margin: auto;
-	margin-top: 150px;
-	margin-bottom: 150px;
+	padding-top: 150px;
+	padding-bottom: 150px;
 	clear: both;
 }
 
@@ -336,8 +336,35 @@ pre{
 	border: 1px solid #06b9fb;
 }
 
-.footer{
-	background: #333;
-	height: 200px;
+/*
+* CSS of contribute part
+*/
+
+.contribute{
+	background-color: #0096ce;
+	color: #fcfcfc;
+	line-height:1.5;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contribute .sub-heading{
+	color:#fcfcfc;
+}
+
+.contribute p{
+	font-size:18px;
+}
+
+.contribute h4{
+	font-size:20px;
+	margin-top:5px;
+}
+
+.contribute a{
+	color: #ccc;
+}
+
+.contribute a:hover{
+	color: #fafafa;
 }
 
