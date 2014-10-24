@@ -1,11 +1,3 @@
-
-/*		$('nav').click(function(){
-			$('nav a[href^="#' + $(location).attr('href').split("#")[1] + '"]').addClass('active');
-		});*/
-
-
-
-
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
     var maxheight = $("#home").height() + 70;
@@ -22,17 +14,17 @@ $(".home-menu").click(function() {
 });
 
 $(".team-menu").click(function() {
-    $('html, body').animate({ scrollTop:$("#team").offset().top + 100}, 500);
+    $('html, body').animate({ scrollTop:$("#team").offset().top}, 500);
 });
 
 $(".install-menu").click(function() {
-    $('html, body').animate({ scrollTop:$("#install").offset().top + 130}, 500);
+    $('html, body').animate({ scrollTop:$("#install").offset().top}, 500);
 });
 
 $(".contact-menu").click(function() {
-    $('html, body').animate({ scrollTop:$("#contact").offset().top - 30}, 500);
+    $('html, body').animate({ scrollTop:$("#contact").offset().top}, 500);
 });
 
 $(".contribute-menu").click(function() {
-    $('html, body').animate({ scrollTop:$("#contribute").offset().top + 100 }, 500);
+    $('html, body').animate({ scrollTop:$("#contribute").offset().top }, 500);
 });

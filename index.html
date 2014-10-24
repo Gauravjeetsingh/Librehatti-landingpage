@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Librehatti</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<link rel="stylesheet" href="main.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="main.min.css" type="text/css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/slider.js"></script>
 </head>
 <body>
-	<div class="container">
 		<div class="top-bar" id="top">
 		<header id="header" class="header large-header">
 			<div class="heading-container">
@@ -24,11 +24,12 @@
 				<li><button class="team-menu">Our Team</button></li>
 				<li><button class="contact-menu">Contact us</button></li>
 				</ul>
-				<a href="#" id="pull"></a>
+				<a href="#" id="pull"><img src="images/nav-icon.png"></a>
 			</nav>
 		</header>
 		</div>
 
+	<div class="container">
 		<div class="sub-container" id="home">
 			<div class="content-box">
 				<div class="video-container">
@@ -137,96 +138,218 @@ $ python manage.py runserver 127.0.0.1:8090
 
 		<div id="team" class="sub-container about">
 			<div class="content-box">
-				<h3 class="sub-heading">Our Team</h3>
-
-				<div class="dev">
-					<div class="dev-image"><img src="images/rai.png"></div>
-					<div class="info-container">
-					<p class="name">Prof(Dr) H S Rai</p>
-					<p class="role">Project lead</p>
-					<p class="desciption">He is the Dean Testing and Consultancy at Guru Nanak Dev Engineering College, Ludhianar. He managed and sponsored this project. It is currently being implemented in Testing and Consultancy Cell.</p>
+				<div class="sub-heading">Our Team</div>
+			   <div class="slider-container">
+				<span class="slide-controls prev-control"><a href="javascript:sliders[0].goToPrev()"><img src="images/prev.png"></a></span>
+				<div class="slider">
+				<ul>
+				<li>
+					<div class="dev-element">
+						<img src="images/rai.png">
 					</div>
+					<div class="dev-element info-container">
+						<p class="name">Prof(Dr) HS Rai</p><p class="role">Project Lead</p> 
+						<p>He is the Dean Testing and Consultancy at Guru Nanak Dev Engineering College, Ludhianar. He managed and sponsored this project. It is currently being implemented in Testing and Consultancy Cell.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/inder.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Inderpreet Singh</p><p class="role">Visionary</p>
+						<p>He is a poet as well as a programmer. He visioned, planned, set standards for librehatti. On being asked "Who are you", he reffered himself as an "old soul".</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/piyush.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Piyush Parkash</p><p class="role">Mentor</p>
+						<p>He layed the founding models in Librehatti. And all he aims is to be happy and keep moving forward with a smile.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/jasvir.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Jasvir Singh</p><p class="role">Developer</p>
+						<p>He is continuously contributing in Librehatti since it's idea came into existence. He can be reffered as a "Purana khiladi"</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/kamal.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Kamal Kaur</p><p class="role">Improver</p>
+						<p>She is a programmer as well as a painter. She won't speak much about herself but she does what she is told.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/jaskaran.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Jaskaran Singh</p><p class="role">Data Handler</p>
+						<p>He is a programmer and a singer. He loves nature, it's people and himself. He wish to lead a settled and a happy life. He handles the data of librehatti.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/h.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Haramritpal Singh</p><p class="role">Developer</p>
+						<p>He wants to become a good learner. He developed admin panel of librehatti and some other stuff. He also did testing of Librehatti.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element"> 
+						<img src="images/aseem.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Aseem Mittal</p><p class="role">Developer</p>
+						<p>He is a learner. He likes to play with things and their look. He did voucher and distribution work of librehatti.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/satinder.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Satinderpal Singh</p><p class="role">Developer</p>
+						<p>He is director at AASP. He worked as main player in TCC automation, now called librehatti. His main work was to automate report generation.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/gaurav.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Gauravjeet Singh</p><p class="role">Front-end Developer</p>
+						<p>He does the part related to HTML/CSS. He is the youngest member of this team. He helped in UI part of librehatti and developed the librehatti website.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/sandeep.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Sandeep Kaur</p><p class="role">Tester</p>
+						<p>She is an I.T. engineer. She want to develop or invent something new in the field of technology and then either acquire a high position in renowned company or have her own company.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/harjot.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Harjot Kaur</p><p class="role">Problem solver</p>
+						<p>He is the Dean Testing and Consultancy at Guru Nanak Dev Engineering College, Ludhianar. He managed and sponsored this project. It is currently being implemented in Testing and Consultancy Cell.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/gunpreet.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Gunpreet Ahuja</p><p class="role">Developer</p>
+						<p>She sees herself as a starter in the world of coders. She want to be a front end developer, an artist, and also a designer. She tweaked code as per the coding guidelines and has also done some other stuff with Librehatti.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/aashita.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Aashita Dutta</p><p class="role">Contributor</p>
+						<p>She is a coder and is always curious to know new things. She want to become entrepreneur with good coding skills. The alpha testing of librehatti was done by her.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/amit.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Amitt Bhardwj</p><p class="role">Developer</p>
+						<p>He is a man of adjectives. He is very selective in choosing friends. A fanatical, moody, soulful, schmaltzy, happy-go-lucky guy who aspires to be a booming, flourishing, palmy, productive, self-made, sure-fire, cognisant and enamored man.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/arun.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Arun Kumar</p><p class="role">Developer</p>
+						<p>He want to be a successful businessman. He is good at public speaking and have good management skills and to enhance those skills, he use college societies and clubs as a platform.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/s.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Saloni Baweja</p><p class="role">Developer</p>
+						<p>She want to become a perfect daughter for her parents who is technically sound and knows cooking too. She is a aspiring web developer with a interest in Computer Networks. She helped in developing the librehatti search engine and has done some other stuff too.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/a.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Ashutosh Singh</p><p class="role">Developer</p>
+						<p>He is an optimist, the one who tries to find a single ray of hope even in the darkest of times. His interests are in logic design, web, and artificial intelligence. He worked on suspense part of Librehatti.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/d.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Divyanshi Kathuria</p><p class="role">Developer</p>
+						<p>She does stuff which she enjoy doing. In her dreams she sees herself as an author of some book. All she want is to help people with her skills. She worked on various parts including testing and documenting librehatti.</p>
+					</div>
+				</li>
+				<li>
+					<div class="dev-element">
+						<img src="images/yourphoto.png">
+					</div>
+					<div class="dev-element info-container">
+						<p class="name">Your Name</p><p class="role">Role</p>
+						<p>Want to see your name and photo here ? Check out the <a href="#contribute">Contributions</a> page and get started developing librehatti.</p>
+					</div>
+				</li>
+				</ul>
 				</div>
-
-				<div class="dev">
-					<div class="dev-image"><img src="images/inder.png"></div>
-					<div class="info-container">
-						<p class="name">Inderpreet Singh</p>
-						<p class="role">Visionary</p>
-						<p class="description">He is a poet as well as a programmer. He visioned, planned, set standards for librehatti. On being asked "Who are you", he reffered himself as an "old soul".</p>
-					</div>
-				</div>
-
-				<div class="dev">
-					<div class="dev-image"><img src="images/piyush.png"></div>
-					<div class="info-container">
-						<p class="name">Piyush Parkash</p>
-						<p class="role">Mentor</p>
-						<p class="description">He layed the founding models in Librehatti. And all he aims is to be happy and keep moving forward with a smile.</p>
-					</div>
-				</div>
-
-				<div class="dev">
-					<div class="dev-image"><img src="images/jasvir.png"></div>
-					<div class="info-container">
-						<p class="name">Jasvir Singh</p>
-						<p class="role">Developer</p>
-						<p class="description">He is continuously contributing in Librehatti since it's idea came into existence. He can be reffered as a "Purana khiladi"</p>
-					</div>
-				</div>
-
-				<div class="dev">
-					<div class="dev-image"><img src="images/kamal.png"></div>
-					<div class="info-container">
-						<p class="name">Kamal Kaur</p>
-						<p class="role">Improver</p>
-						<p class="description">She is a programmer as well as a painter. She won't speak much about herself but she does what she is told.</p>
-					</div>
-				</div>
-
-				<div class="dev">
-					<div class="dev-image"><img src="images/jaskaran.png"></div>
-					<div class="info-container">
-						<p class="name">Jaskaran Singh</p>
-						<p class="role">Data Handler</p>
-						<p class="description">He is a programmer and a singer. He loves nature, it's people and himself. He wish to lead a settled and a happy life. He handles the data of librehatti.</p>
-					</div>
-				</div>
-
-				<div class="dev">
-					<div class="dev-image"><img src="images/haramrit.png"></div>
-					<div class="info-container">
-						<p class="name">Har Amrit Pal Singh</p>
-						<p class="role">Developer</p>
-						<p class="description">He wants to become a good learner. He developed admin panel of librehatti and some other stuff. He also did testing of Librehatti.</p>
-					</div>
-				</div>
-
-				<div class="dev">
-					<div class="dev-image"><img src="images/aseem.png"></div>
-					<div class="info-container">
-						<p class="name">Aseem Mittal</p>
-						<p class="role">Developer</p>
-						<p class="description">He is a learner. He likes to play with things and their look. He did voucher and distribution work of librehatti. </p>
-					</div>
-				</div>
-
-				<div class="dev">
-					<div class="dev-image"><img src="images/satinder.png"></div>
-					<div class="info-container">
-						<p class="name">Satinderpal Singh</p>
-						<p class="role">Developer</p>
-						<p class="description">He is director at AASP. He worked as main player in TCC automation, now called librehatti. His main work was to automate report generation.</p>
-					</div>
-				</div>
-
-				<div class="dev">
-					<div class="dev-image"><img src="images/gaurav.png"></div>
-					<div class="info-container">
-						<p class="name">Gauravjeet Singh</p>
-						<p class="role">Front end Developer</p>
-						<p class="description">He does the part related to HTML/CSS. He is the youngest member of this team. He helped in UI part of librehatti and developed the librehatti website.</p>
-					</div>
+				<span class="slide-controls next-control"><a href="javascript:sliders[0].goToNext()"><img src="images/next.png"></a></span>
+			   </div>
+				<div class="team-members">
+				<ul>
+				<li class="dev" id="0"><img src="images/rai.png"><p class="name">Prof(Dr) HS Rai</p></li>
+				<li class="dev" id="1"><img src="images/inder.png"><p class="name">Inderpreet Singh</p></li>
+				<li class="dev" id="2"><img src="images/piyush.png"><p class="name">Piyush Parkash</p></li>
+				<li class="dev" id="3"><img src="images/jasvir.png"><p class="name">Jasvir Singh</p></li>
+				<li class="dev" id="4"><img src="images/kamal.png"><p class="name">Kamal Kaur</p></li>
+				<li class="dev" id="5"><img src="images/jaskaran.png"><p class="name">Jaskaran Singh</p></li>
+				<li class="dev" id="6"><img src="images/h.png"><p class="name">Haramritpal Singh</p></li>
+				<li class="dev" id="7"><img src="images/aseem.png"><p class="name">Aseem Mittal</p></li>
+				<li class="dev" id="8"><img src="images/satinder.png"><p class="name">Satinderpal Singh</p></li>
+				<li class="dev" id="9"><img src="images/gaurav.png"><p class="name">Gauravjeet Singh</p></li>
+				<li class="dev" id="10"><img src="images/sandeep.png"><p class="name">Sandeep Kaur</p></li>
+				<li class="dev" id="11"><img src="images/harjot.png"><p class="name">Harjot Kaur</p></li>
+				<li class="dev" id="12"><img src="images/gunpreet.png"><p class="name">Gunpreet Ahuja</p></li>
+				<li class="dev" id="13"><img src="images/aashita.png"><p class="name">Aashita Dutta</p></li>
+				<li class="dev" id="14"><img src="images/amit.png"><p class="name">Amitt Bhardwj</p></li>
+				<li class="dev" id="15"><img src="images/arun.png"><p class="name">Arun Kumar</p></li>
+				<li class="dev" id="16"><img src="images/s.png"><p class="name">Saloni Baweja</p></li>
+				<li class="dev" id="17"><img src="images/a.png"><p class="name">Ashutosh Singh</p></li>
+				<li class="dev" id="18"><img src="images/d.png"><p class="name">Divyanshi Kathuria</p></li>
+				<li class="dev" id="19"><img src="images/yourphoto.png"><p class="name">your name</p></li>
+				</ul>
 				</div>
 			</div>
 		</div>
@@ -244,6 +367,7 @@ $ python manage.py runserver 127.0.0.1:8090
 		</div>
 
 	</div>
+	<script src="js/team.js"></script>
 	<script src="js/install.js"></script>
 	<script src="js/media-player.js"></script>
 	<script src="js/scroll-effect.js"></script>
