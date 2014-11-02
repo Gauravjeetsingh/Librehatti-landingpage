@@ -338,9 +338,14 @@ pre{
 * CSS of team part
 */
 
+#team-heading{
+	cursor:pointer;
+}
+
 .team-members img{
 	width:100px;
 	margin:15px;
+	cursor:pointer;
 }
 
 .team-members .name{

@@ -23,6 +23,9 @@ $(document).keydown(function(event)
 	}
 });
 
+$("#team-heading").click(function(){
+	hideSlider();
+});
 
 function hideSlider(){
 	$(".slider-container").css("display", "none");
