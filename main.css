@@ -321,8 +321,10 @@ pre{
 }
 
 .contribute h4{
-	font-size:20px;
-	margin-top:5px;
+	font-size:25px;
+	margin-top:20px;
+	font-weight:400;
+	text-shadow:0px 0px 0px #fff;
 }
 
 .contribute a{
